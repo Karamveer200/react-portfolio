@@ -2,7 +2,7 @@ import { socialImgs } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer relative z-1">
       <div className="footer-container">
         <div className="flex flex-col justify-center">
           <p>Terms & Conditions</p>
@@ -15,9 +15,12 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Adrian Hajdin. All rights reserved.
-          </p>
+          <a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank">
+            <p className="text-center md:text-end">
+              Inspired by © {new Date().getFullYear()} Adrian Hajdin. All rights
+              reserved.
+            </p>
+          </a>
         </div>
       </div>
     </footer>

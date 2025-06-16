@@ -22,7 +22,7 @@ const AnimatedCounter = () => {
       // Create the counting animation
       gsap.to(numberElement, {
         innerText: item.value,
-        duration: 2.5,
+        duration: 2,
         ease: "power2.out",
         snap: { innerText: 1 }, // Ensures whole numbers
         scrollTrigger: {
@@ -31,14 +31,18 @@ const AnimatedCounter = () => {
         },
         // Add the suffix after counting is complete
         onComplete: () => {
-          numberElement.textContent = `${item.value}${item.suffix}`;
+          numberElement.textContent = `${item.value}`;
         },
       });
     }, counterRef);
   }, []);
 
   return (
-    <div id="counter" ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
+    <div
+      id="counter"
+      ref={counterRef}
+      className="padding-x-lg xl:mt-0 mt-32 relative z-1"
+    >
       <div className="mx-auto grid-4-cols">
         {counterItems.map((item, index) => (
           <div
@@ -46,8 +50,10 @@ const AnimatedCounter = () => {
             ref={(el) => el && (countersRef.current[index] = el)}
             className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
           >
-            <div className="counter-number text-white-50 text-5xl font-bold mb-2">
-              0 {item.suffix}
+            <div className="text-white-50 text-5xl font-bold mb-2">
+              {item.prefix}
+              <span className="counter-number">0</span>
+              {item.suffix}
             </div>
             <div className="text-white-50 text-lg">{item.label}</div>
           </div>

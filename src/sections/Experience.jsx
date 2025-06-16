@@ -92,7 +92,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      className="flex-center md:mt-40 mt-20 section-padding xl:px-0 relative z-1"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader

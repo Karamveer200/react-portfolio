@@ -24,7 +24,8 @@ const Particles = ({ count = 200 }) => {
     for (let i = 0; i < count; i++) {
       let y = positions[i * 3 + 1];
       y -= particles[i].speed;
-      if (y < -2) y = Math.random() * 10 + 5;
+
+      if (y < -7) y = Math.random() * 20 + 5;
       positions[i * 3 + 1] = y;
     }
     mesh.current.geometry.attributes.position.needsUpdate = true;

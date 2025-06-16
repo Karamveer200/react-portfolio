@@ -38,6 +38,7 @@ function CircularImage({
 }
 
 const HeroExperience = () => {
+  const isSmallMobile = useMediaQuery({ query: "(max-width: 400px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 968px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1400px)" });
 
@@ -50,21 +51,21 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      <Particles count={1000} />
-
       {/* deep blue ambient */}
       <ambientLight intensity={0.2} color="#1a1a40" />
 
       <Suspense fallback={null}>
         <HeroLights />
-        <group scale={getScale()}>
-          <CircularImage
-            url="/images/myFace.jpg"
-            scale={[7, 7]}
-            position={[0, 0, 0]}
-            cl
-          />
-        </group>
+        {!isSmallMobile && (
+          <group scale={getScale()}>
+            <CircularImage
+              url="/images/myFace.jpg"
+              scale={[7, 7]}
+              position={[0, 0, 0]}
+              cl
+            />
+          </group>
+        )}
       </Suspense>
     </Canvas>
   );

@@ -17,16 +17,13 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden banner">
-      {/* <img src="/images/banner-bg.png" alt="" /> */}
-      <div className="absolute top-0 left-0 z-10"></div>
-
       <div className="hero-layout">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:p-20 px-5 xl:-mt-20">
+        <header className="flex flex-col justify-center md:w-full w-screen md:p-20 p-10 xl:-mt-20">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                Transforming
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
@@ -46,12 +43,19 @@ const Hero = () => {
                 </span>
               </h1>
               <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>that Drive Growth</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+            <p className="text-white-50 sm:text-xl relative z-10 pointer-events-none max-w-[400px] sm:max-w-[600px] lg:max-w-[600px] 2xl:max-w-[750px]">
+              Software Engineer with <strong>5+ years</strong> of full-stack
+              development experience, specializing in React.js, Next.js,
+              Node.js, TypeScript, Cloud and Web3. A proactive team leader and
+              self-starter who has scaled projects to{" "}
+              <strong>10,000+ daily users</strong>
+              worldwide and{" "}
+              <strong>
+                successfully migrated over $50M in digital assets.
+              </strong>
             </p>
 
             <Button
@@ -62,7 +66,6 @@ const Hero = () => {
           </div>
         </header>
 
-        {/* RIGHT: 3D Model or Visual */}
         <figure>
           <div className="hero-3d-layout">
             <HeroExperience />

@@ -99,7 +99,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 md:top-60 top-48 xl:-right-20 right-0;
   }
 
   .navbar {
@@ -155,10 +155,10 @@ section {
   }
 
   .app-showcase {
-    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+    @apply w-full px-5 md:px-20 pb-10 md:pb-20 flex items-center justify-center;
 
     .showcaselayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+      @apply flex xl:flex-row flex-col gap-24 justify-between;
     }
 
     .first-project-wrapper {
@@ -479,6 +479,7 @@ section {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -122px;
 }
 .banner .tagline {
   font-weight: 700;
