@@ -51,8 +51,7 @@ const Hero = () => {
               development experience, specializing in React.js, Next.js,
               Node.js, TypeScript, Cloud and Web3. A proactive team leader and
               self-starter who has scaled projects to{" "}
-              <strong>10,000+ daily users</strong>
-              worldwide and{" "}
+              <strong>10,000+ daily users</strong> worldwide and{" "}
               <strong>
                 successfully migrated over $50M in digital assets.
               </strong>

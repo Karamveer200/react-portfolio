@@ -30,9 +30,9 @@ const words = [
 
 const counterItems = [
   { prefix: "", value: 10000, suffix: "+", label: "Daily Users" },
+  { prefix: "", value: 3.5, suffix: "B+", label: "Tokens Staked" },
   { prefix: "$", value: 50, suffix: "M+", label: "Digital Asset Inflows" },
   { prefix: "$", value: 2, suffix: "M+", label: "Launch day revenue" },
-  { prefix: "", value: 5, suffix: "+", label: "Years of Experience" },
 ];
 
 const logoIconsList = [
@@ -112,156 +112,125 @@ const techStackImgs = [
   },
 ];
 
-const techStackIcons = [
-  {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
-];
-
 const expCards = [
   {
-    review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
-  },
-];
+    imgPath: "/images/exp1.svg",
+    logoPath: "/images/logo1.svg",
+    title: "🛡️ BankSocial - Software Engineer",
+    skills: ["React", "Next.js", "TypeScript", "Node.js", "Laravel", "OOP"],
+    companyLink: "https://nuron.banksocial.io",
 
-const expLogos = [
-  {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
+    responsibilities: [
+      "Launched a multi-chain embedded crypto wallet inside U.S. banking apps",
+      "Architected a robust Vault SDK using Node TypeScript, incorporating Dependency Injection and SOLID principles for scalable crypto operations.",
+      "Developed self-healing algorithms to handle system failures, ensuring real-time data integrity",
+      "Contributed in the migration of $50M+ in digital assets from Ethereum to Hedera Hashgraph",
+    ],
   },
   {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
+    imgPath: "/images/exp2.svg",
+    logoPath: "/images/logo2.svg",
+    title: "🧑‍💻 SimplyAsk - Software Developer",
+    skills: ["React", "Redux", "TypeScript", "Postgres", "Vitest"],
+    companyLink: "https://www.simplyask.ai",
+
+    responsibilities: [
+      "Leveraged advanced React patterns including custom hooks, state machines, and memoization",
+      "Built frontend for a CRM & BPA platform with high performance and scalability",
+      "Achieved 85%+ test coverage using Vitest and Jest across React and Node codebases",
+    ],
   },
   {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
+    imgPath: "/images/exp3.svg",
+    logoPath: "/images/logo3.svg",
+    title: "💻 Telus - Jr. Frontend Developer",
+    skills: ["Legacy Migration", "React", "Node", "Google Cloud"],
+    companyLink: "https://www.telus.com/en",
+
+    responsibilities: [
+      "Modernized Frontend of legacy VoIP system, boosting CRM performance and customer retention",
+      "Developed multilingual UI, handling errors and agent auto-assignment logic",
+      "Contributed to scalable microservices with Docker and improved testing with Jest",
+    ],
+  },
+
+  {
+    imgPath: "/images/exp4.svg",
+    logoPath: "/images/logo4.svg",
+    title: "🛒 Workpeer - Jr. Frontend Developer",
+    skills: ["E-commerce", "React", "hooks", "Stripe", "Redux"],
+    companyLink: "https://medium.com/workpeer/about",
+
+    responsibilities: [
+      "Built text formatting tools using React and Lexical, enhancing user engagement",
+      "Developed a responsive meeting organizer app with Styled Components",
+    ],
+  },
+
+  {
+    imgPath: "/images/exp5.svg",
+    logoPath: "/images/logo5.svg",
+    title: "🧑‍💻 Karam Productions - Web Developer",
+    skills: ["Typescript", "Node", "JavaScript", "Html", "Css"],
+
+    responsibilities: [
+      "Designed interactive interfaces with Bootstrap for browsing plants, fountains, and services",
+      "Optimized backend performance by refactoring TypeScript + PostgreSQL queries",
+    ],
   },
 ];
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Joshua Li",
+    role: "Joshua worked in the same team",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "As a backend developer, working with Karamveer to integrate the work I've done with all the work he does in the frontend is a very efficient and straightforward process. He's always very clear with what is needed from me, but can also be flexible and adapt to whatever requirements I bring to him. He's hard-working and never falls behind, but also has a sense of humor and friendliness that makes him easy to work with. And of course, all of the Javascript he does for the frontend works like a charm and looks great every time",
+    imgPath: "/images/client4.png",
   },
+
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Kiran Jain",
+    role: "Kiran was Karamveer's senior",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Karamveer is a hard-working and focused person. He is technically very good in his areas. He has good time-management skills and is ready to take on any challenging situations. To take an extra step to help anyone is his quality. I wish him all the best in all spheres of life",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Dhruv Soni",
+    role: "Dhruv managed Karamveer directly",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Karamveer and I worked together in couple of projects for a long time. He consistently gave 100% effort and was always come up with the out of box solutions. He has excellent management skills and knows how to extract 100 percent out of someone.",
+    imgPath: "/images/client1.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Sunny Bhandal",
+    role: "Sunny worked in the same team",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "During my time at SimplyAsk, I was truly amazed by Karamveer’s ability to handle complex tasks and work ethic. Karamveer is a true team player and is someone that will go above and beyond when it comes to his work. He was always there for team members when they required assistance which made him an excellent mentor. Any team would be lucky to have Karamveer as he’s incredibly intelligent, focused, and determined to succeed.",
+    imgPath: "/images/client2.png",
+  },
+
+  {
+    name: "Arshdeep Singh",
+    role: "Arshdeep worked in the same team",
+    review:
+      "Karamveer is a kind of person who seriously have an ability put all his effort to achieve the goal he sets in his mind. He is any time available to just help somebody struggling with errors or issues. The best skill i really appreciate about in him is the skill to grasp the knowledge and implement it quickly. I have never found him replying with 'No' and either making any excuses which makes him consistent in work ethically. I must say he is the value Addition to an organisation that he joins.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Shivang Soni",
+    role: "Shivang reported directly to Karamveer",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Karamveer is a great human being and mentor with an amazing sense of humour. He has deep knowledge in Full Stack Development. He is a diligent and focused person with a work done attitude. I have worked under his mentorship in one of the projects, he expresses and explains everything very well. I would surely recommend him and he would be great asset for the team.",
     imgPath: "/images/client6.png",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
     name: "linkedin",
+    link: "https://www.linkedin.com/in/skillerchamp/",
     imgPath: "/images/linkedin.png",
   },
 ];
@@ -272,10 +241,8 @@ export {
   logoIconsList,
   counterItems,
   expCards,
-  expLogos,
   testimonials,
   socialImgs,
-  techStackIcons,
   techStackImgs,
   navLinks,
 };

@@ -46,14 +46,33 @@ const AppShowcase = () => {
 
   return (
     <div className="flex flex-col gap-10">
-      <div className="mt-24 sm:mt-32">
-        <TitleHeader
-          title="Recent Projects"
-          sub="🛠️ Successfully Launched Products"
-        />
+      <div className="text-center py-16 bg-black/3 z-10 mt-10 backdrop-blur-[1px]">
+        <TitleHeader sub="🧰 Handy Toolbox" />
+
+        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">React</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Next.js</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">TypeScript</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">JavaScript</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Node.js</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">PostgreSQL</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Laravel</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Solidity</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Docker</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Blockchain</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Cloud</span>
+        </div>
       </div>
 
-      <div id="work" ref={sectionRef} className="app-showcase relative z-1">
+      <div className="mt-24 sm:mt-32">
+        <TitleHeader sub="🚀 Highlights 🚀" />
+      </div>
+
+      <div
+        id="work"
+        ref={sectionRef}
+        className="app-showcase relative z-1 -mt-8"
+      >
         <div className="w-full">
           <div className="showcaselayout">
             <div ref={rydeRef} className="first-project-wrapper">
@@ -61,7 +80,7 @@ const AppShowcase = () => {
                 <img src="/images/project1.png" alt="Ryde App Interface" />
               </div>
               <div className="text-content">
-                <h2>
+                <h2 className="text-xl">
                   BankSocial, A Multi-Chain Crypto Wallet Embedded Right Into
                   Your Bank App
                 </h2>
@@ -82,14 +101,18 @@ const AppShowcase = () => {
                   />
                 </div>
 
-                <h2>Symphona, AI-driven no‑code CRM & BPA platform</h2>
+                <h2 className="text-xl">
+                  Symphona, AI-driven no‑code CRM & BPA platform
+                </h2>
               </div>
 
               <div className="project xl:mt-4" ref={ycDirectoryRef}>
                 <div className="image-wrapper bg-[#becbe7]">
                   <img src="/images/project3.png" alt="YC Directory App" />
                 </div>
-                <h2>Telus, Migrated Legacy Systems to Modern Tech Stack</h2>
+                <h2 className="text-xl">
+                  Telus, Migrated Legacy Systems to Modern Tech Stack
+                </h2>
               </div>
             </div>
           </div>

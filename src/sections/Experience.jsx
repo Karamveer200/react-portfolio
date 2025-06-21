@@ -50,7 +50,7 @@ const Experience = () => {
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
-        end: "70% center",
+        end: "60% center",
         // Update the animation as the user scrolls
         onUpdate: (self) => {
           // Scale the timeline height as the user scrolls
@@ -92,24 +92,42 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0 relative z-1"
+      className="flex-center md:mt-40 mt-20 section-padding xl:px-0 relative z-1 bg-black/3 backdrop-blur-[2px]"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
-        />
+        <TitleHeader title="Professional Experience" sub="💼 Career Overview" />
         <div className="mt-32 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
+          <div className="relative z-50 xl:space-y-20 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                <a
+                  className="xl:w-2/6 cursor-pointer"
+                  target={card.companyLink ? "_blank" : undefined}
+                  rel={card.companyLink ? "noopener noreferrer" : undefined}
+                  href={card.companyLink || "#"}
+                  onClick={
+                    !card.companyLink ? (e) => e.preventDefault() : undefined
+                  }
+                >
+                  <GlowCard>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
+
+                    <div className="mt-3">
+                      {card.skills?.map((skill, index) => (
+                        <div
+                          key={index}
+                          className="text-white-50 text-sm font-thin inline"
+                        >
+                          {skill}
+                          {index < card.skills.length - 1 ? ", " : ""}
+                        </div>
+                      ))}
+                    </div>
                   </GlowCard>
-                </div>
+                </a>
+
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
                     <div className="timeline-wrapper">
@@ -117,21 +135,28 @@ const Experience = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
+                      <a
+                        className="timeline-logo cursor-pointer"
+                        target={card.companyLink ? "_blank" : undefined}
+                        rel={
+                          card.companyLink ? "noopener noreferrer" : undefined
+                        }
+                        href={card.companyLink || "#"}
+                        onClick={
+                          !card.companyLink
+                            ? (e) => e.preventDefault()
+                            : undefined
+                        }
+                      >
                         <img src={card.logoPath} alt="logo" />
-                      </div>
+                      </a>
                       <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
-                        </p>
-                        <p className="text-[#839CB5] italic">
-                          Responsibilities
-                        </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                        <h1 className="font-semibold text-xl">{card.title}</h1>
+
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-2 text-white-50">
                           {card.responsibilities.map(
                             (responsibility, index) => (
-                              <li key={index} className="text-lg">
+                              <li key={index} className="text-base font-thin">
                                 {responsibility}
                               </li>
                             )
