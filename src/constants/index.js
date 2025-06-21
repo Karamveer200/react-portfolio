@@ -237,6 +237,11 @@ const socialImgs = [
     link: "https://www.linkedin.com/in/skillerchamp/",
     imgPath: "/images/linkedin.png",
   },
+  {
+    name: "Github",
+    link: "https://github.com/Karamveer200",
+    imgPath: "/images/github.png",
+  },
 ];
 
 export {
