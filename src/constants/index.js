@@ -119,7 +119,7 @@ const expCards = [
     title: "🛡️ BankSocial - Software Engineer",
     skills: ["React", "Next.js", "TypeScript", "Node.js", "Laravel", "OOP"],
     companyLink: "https://nuron.banksocial.io",
-
+    date: "June 2024 - Present",
     responsibilities: [
       "Launched a multi-chain embedded crypto wallet inside U.S. banking apps",
       "Architected a robust Vault SDK using Node TypeScript, incorporating Dependency Injection and SOLID principles for scalable crypto operations.",
@@ -133,6 +133,7 @@ const expCards = [
     title: "🧑‍💻 SimplyAsk - Software Developer",
     skills: ["React", "Redux", "TypeScript", "Postgres", "Vitest"],
     companyLink: "https://www.simplyask.ai",
+    date: "January 2023 - May 2024",
 
     responsibilities: [
       "Leveraged advanced React patterns including custom hooks, state machines, and memoization",
@@ -146,6 +147,7 @@ const expCards = [
     title: "💻 Telus - Jr. Frontend Developer",
     skills: ["Legacy Migration", "React", "Node", "Google Cloud"],
     companyLink: "https://www.telus.com/en",
+    date: "August 2021 - December 2022",
 
     responsibilities: [
       "Modernized Frontend of legacy VoIP system, boosting CRM performance and customer retention",
@@ -160,6 +162,7 @@ const expCards = [
     title: "🛒 Workpeer - Jr. Frontend Developer",
     skills: ["E-commerce", "React", "hooks", "Stripe", "Redux"],
     companyLink: "https://medium.com/workpeer/about",
+    date: "April 2021 - July 2021",
 
     responsibilities: [
       "Built text formatting tools using React and Lexical, enhancing user engagement",
@@ -172,6 +175,7 @@ const expCards = [
     logoPath: "/images/logo5.svg",
     title: "🧑‍💻 Karam Productions - Web Developer",
     skills: ["Typescript", "Node", "JavaScript", "Html", "Css"],
+    date: "March 2022 - March 2021",
 
     responsibilities: [
       "Designed interactive interfaces with Bootstrap for browsing plants, fountains, and services",

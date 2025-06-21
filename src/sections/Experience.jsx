@@ -92,11 +92,11 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0 relative z-1 bg-black/3 backdrop-blur-[2px]"
+      className="flex-center md:mt-40 mt-20 section-padding xl:px-0 relative z-1 bg-black/3 backdrop-blur-[2px] pt-12"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader title="Professional Experience" sub="💼 Career Overview" />
-        <div className="mt-32 relative">
+        <div className="mt-14 relative">
           <div className="relative z-50 xl:space-y-20 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
@@ -152,6 +152,8 @@ const Experience = () => {
                       </a>
                       <div>
                         <h1 className="font-semibold text-xl">{card.title}</h1>
+
+                        <p className="my-2 text-white-50 pl-2">{card.date}</p>
 
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-2 text-white-50">
                           {card.responsibilities.map(

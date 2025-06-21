@@ -49,22 +49,33 @@ const AppShowcase = () => {
       <div className="text-center py-16 bg-black/3 z-10 mt-10 backdrop-blur-[1px]">
         <TitleHeader sub="🧰 Handy Toolbox" />
 
-        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
-          <span className="bg-zinc-800 px-3 py-1 rounded-full">React</span>
+        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 max-w-3xl mx-auto px-4">
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Next.js</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">React</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Hooks</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Redux</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">TypeScript</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">JavaScript</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">OOP</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">MongoDB</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Express</span>
+
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Node.js</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">
+            Function Testing
+          </span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Vitest</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Node:test</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">PostgreSQL</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Laravel</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Solidity</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Docker</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Blockchain</span>
           <span className="bg-zinc-800 px-3 py-1 rounded-full">Cloud</span>
+          <span className="bg-zinc-800 px-3 py-1 rounded-full">Docker</span>
         </div>
       </div>
-
-      <div className="mt-24 sm:mt-32">
+      <div className="mt-20 sm:mt-32">
         <TitleHeader sub="🚀 Highlights 🚀" />
       </div>
 
@@ -84,15 +95,10 @@ const AppShowcase = () => {
                   BankSocial, A Multi-Chain Crypto Wallet Embedded Right Into
                   Your Bank App
                 </h2>
-                <p className="text-white-50 md:text-xl">
-                  A self-custody wallet built using Next.js, Laravel, and
-                  TypeScript with seamless crypto transactions directly from
-                  bank accounts.
-                </p>
               </div>
             </div>
 
-            <div className="project-list-wrapper overflow-hidden mt-4">
+            <div className="project-list-wrapper overflow-hidden ">
               <div className="project" ref={libraryRef}>
                 <div className="image-wrapper bg-[#becbe7]">
                   <img
